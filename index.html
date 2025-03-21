@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome / Curtis Botting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CURTIS JACKS</h1>
+        <h2>Visualising your dreams for the world.</h2>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="splash" alt="Splash text">
+        <div>
+            <h3 class="centretext">TRANSFORM YOUR WORLD.</h3>
+            <h3 class="centretext">BRING YOUR TRADE TO LIFE.</h3>
+        </div>
+    </div>
+    <article class="homepage">
+        <h3>What makes a website <em>special?</em></h3>
+        <p>Making a website your own requires little to no effort when left in the hands of
+            a compassionate developer who loves what he does and nurtures creativity into every
+            angle of his work mixed with technical prowess.<br>
+            Don't settle for the standard when it comes to your website, the modern day storefront
+            of the businesses of today, get a website that will pop out and keep users wanting to browse
+            and learn what your business has to offer.<br>
+            Why settle for any less? If you have faith in 
+            your business, let your customers know that with a beautiful site to graciously introduce
+            yourself to the world.
+        </p>
+        <br>
+        <button id="hide" onclick="hideImage()">Hide Image</button>
+        <div id="imgcontainer">
+            <img id="homepageimg" src="assets/images/numatiklab.PNG" alt="client website preview" class="homepage">
+            <h4>Above: A website made for a previous client, fully responsive to different formats.</h4>
+        </div>
+        <h3 class="right">Make your brand <strong>unique</strong> today</h3>
+        <p>With responsive, exciting designs that cover all bases from the cute and cheerful to
+        the dark and mysterious, along with both vintage and modern designs, the possibilities are only
+    limited to the client's best wishes for the design they desire. <br>
+Still curious to learn more. <a href="about.html"><em>Find out more about me.</em></a></p>
+    </article>
+    <footer>
+        <h4>&copy;Curtis Botting, 2025.</h4>
+        <h4>All rights reserved.</h4>
+    </footer>
+</body>
+
+<script>
+//hide button, on home page
+let homepageimg = document.getElementById("imgcontainer");
+let show = true;
+
+function hideImage() {
+    //hello there
+    if (show) {
+        homepageimg.style.display = "none"
+        show = false;
+        document.getElementById("hide").innerHTML = "Show Image"
+    } else {
+        homepageimg.style.display = "block"
+        show = true;
+        document.getElementById("hide").innerHTML = "Hide Image"
+    }
+};
+</script>
+</html>
