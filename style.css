@@ -159,6 +159,13 @@ h4 {
     color:rgb(255, 255, 255);
 }
 
+.experience h5 {
+    font-size: 1.1rem;
+    color:white;
+    line-height: 0.1rem;
+    margin-bottom: -0.1rem;
+}
+
 .contact h3 {
     border:none;
     font-weight:200;
