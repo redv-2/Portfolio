@@ -162,8 +162,8 @@ h4 {
 .experience h5 {
     font-size: 1.1rem;
     color:white;
-    line-height: 0.1rem;
     margin-bottom: -0.1rem;
+    margin-top:0.2rem;
 }
 
 .contact h3 {
