@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About / Curtis Botting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CURTIS JACKS</h1>
+        <h2>Visualising your dreams for the world.</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="about">
+        <h2>PROJECTS</h2>
+        <h3>This Portfolio</h3>
+        <p>This very page was the <strong>most recent prototype</strong> of a couple pre-existing versions of my main site. I aim to capture the essence of a brief, descriptive website that
+        shows not only technical skill but also my personality itself to anyone who may not know me. This site was initially designed on photoshop, allowing for a good wireframe to be created
+        to help capture the right feel and presentation of myself for the world.<br>As I continue to learn more day by day about coding and its possibilities, I have left a trail of my growth
+        by leaving my original portfolio (The first public prototype) <strong><a href="https://redv-2.github.io/CurtisJacks/">here.</a></strong> Otherwise, below is a runthrough of my original page!</p>
+        <h3>My first prototype</h3>
+        <div class="carousel">
+            <img src="assets/images/proto_home.PNG" id="proto">
+            <h4 id="prototitle">Home page.</h4>
+            <input type="button" value="Next Image" id="nextproto">
+        </div>
+        <p>This is my first portfolio page. It was very basic and I had little understanding of essential tools such as flexbox and css grid, however for a first portfolio it was rather exciting
+            to launch and call my own. Where it lacks in functionality, it gave back in character as it was my first design and I particularly enjoyed the overlayed design on my about page where
+            the content would lay over one another like a stack of notes. For my current website I chose to go for a more simple design, however I am still a large fan of how I formatted my old one.<br>
+            This website also featured a non-functional projects and contact page, with working buttons for my social media accounts to contact me.<br>In recent times, I have been learning how to better
+            create forms and soon to learn to make a functional email submission form.
+        </p>
+    </article>
+    <footer>
+        <h4>&copy;Curtis Botting, 2025.</h4>
+        <h4>All rights reserved.</h4>
+    </footer>
+
+    <script>
+        let imagepos = 0;
+        let paths = [
+            "home","about","projects","contact"
+        ];
+        let image = document.getElementById("proto");
+        let btn = document.getElementById("nextproto");
+        let title = document.getElementById("prototitle");
+
+        btn.addEventListener("click",function() {
+            imagepos++;
+            if (imagepos > 3) {
+                imagepos = 0;
+            };
+            image.src = "assets/images/proto_" + paths[imagepos] + ".PNG";
+            title.innerHTML = paths[imagepos] + " page."
+        })
+    </script>
+</body>
+</html>
